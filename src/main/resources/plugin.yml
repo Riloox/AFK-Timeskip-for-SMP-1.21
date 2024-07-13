@@ -1,0 +1,18 @@
+name: afkTimeskip
+version: '${project.version}'
+main: org.possess.afktimeskip.AfkTimeskip
+api-version: '1.21'
+
+commands:
+  afk:
+    description: Toggle AFK status
+    usage: /<command>
+  afkreload:
+    description: Reload the plugin configuration
+    usage: /<command>
+    permission: afktimeskip.reload
+
+permissions:
+  afktimeskip.reload:
+    description: Allows reloading the plugin configuration
+    default: op
